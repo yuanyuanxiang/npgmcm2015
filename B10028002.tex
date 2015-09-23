@@ -1,0 +1,16 @@
+
+%% 请用 pdfTexify 或 pdfLaTex 或 XeLaTex 编译
+%% 运行完请直接查看pdf，不需要dvi->pdf
+%% 或者直接点击 Run.bat
+%% 2014年9月4日
+
+\documentclass[a4paper]{article}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+    \includepdfmerge{cover.pdf, 1-}
+    \includepdfmerge{paper.pdf, 1-}
+
+\end{document}

@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 请用 XeLaTex 编译.                              %%
+%% 参考 http://www.madio.net/thread-35066-1-1.html %%
+%% 2014年9月4日，962914132@qq.com                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\XeTeXinputencoding "cp936"
+\documentclass[a4paper]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{fontspec,xunicode}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{ulem}
+
+\defaultfontfeatures{Mapping=tex-text}
+\definecolor{gray}{rgb}{1,1,1}
+\newlength{\shadowlength}
+\newcommand{\shadowtext}[1]
+{
+    \settowidth{\shadowlength}{\ \ #1}
+    \raisebox{-0.05ex}{\ \ \color{black}#1}
+    \makebox[-\shadowlength]{#1}
+}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+\textheight=257mm
+\setlength{\topmargin}{-1.54cm}
+
+%% 文档开始
+\begin{document}
+
+% 第一页
+\thispagestyle{empty}
+\setmainfont{隶书}\fontsize{12pt}{\baselineskip}\selectfont\hspace{9.2cm}\textbf{参赛密码}\hspace{0.3cm}{\rule{2.2cm}{0.05em}}\vspace{0.1cm}\par
+\setmainfont{隶书}\fontsize{12pt}{\baselineskip}\selectfont\hspace{9.0cm}\shadowtext{(由组委会填写)}\vspace{5.4cm} \par
+\setmainfont{STXinwei}\fontsize{22pt}{\baselineskip}\selectfont\center\textbf{第十二届“中关村青联杯”全国研究生} \par
+\setmainfont{STXinwei}\fontsize{22pt}{\baselineskip}\selectfont\center\textbf{数学建模竞赛}\vspace{5.2cm}
+
+% 参赛信息
+\begin{table}[htbp]
+\arrayrulewidth=0.75pt
+\begin{tabular} {p{90pt}p{320pt}}
+    \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\textbf{学\hspace{36pt}校} & \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\hspace{2.3cm}\shadowtext{首都师范大学}\\
+             \hline    \vspace{1.0cm} \\
+    \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\textbf{参赛队号}          & \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\hspace{2.8cm}\shadowtext{10028002}\\
+             \hline    \vspace{0.3cm} \\
+    \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\raisebox{-4.00ex}[0cm][0cm]{\textbf{队员姓名}}
+           & \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\textbf{1.}\hspace{2.3cm}\shadowtext{袁沅祥}\\
+           \cline{2-2} \vspace{0.3cm} \\
+           & \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\textbf{2.}\hspace{2.3cm}\shadowtext{陈  迪}\\
+           \cline{2-2} \vspace{0.3cm} \\
+           & \setmainfont{宋体}\fontsize{18pt}{\baselineskip}\selectfont\textbf{3.}\hspace{2.3cm}\shadowtext{鲁世嘉}\\
+    \hline
+\end{tabular}
+\label{contestant}
+\end{table}
+
+% 第二页
+\newpage
+\thispagestyle{empty}
+
+\setmainfont{隶书}\fontsize{12pt}{\baselineskip}\selectfont\hspace{9.2cm}\textbf{参赛密码}\hspace{0.3cm}{\rule{2.2cm}{0.05em}}\vspace{0.1cm}\par
+\setmainfont{隶书}\fontsize{12pt}{\baselineskip}\selectfont\hspace{9.0cm}\shadowtext{(由组委会填写)}\vspace{1.0cm} \par
+
+% logos
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width = 2.60cm]{images/gumcm.eps}
+  \includegraphics[width = 2.60cm]{images/bjt.eps}
+  \includegraphics[width = 5.60cm]{images/tct.eps}
+  \includegraphics[width = 2.60cm]{images/huawei.eps}
+\end{center}
+\end{figure}
+\vspace{1.0cm}
+
+\setmainfont{STXinwei}\fontsize{22pt}{\baselineskip}\selectfont\textbf{第十二届“中关村青联杯”全国研究生} \par
+\setmainfont{STXinwei}\fontsize{22pt}{\baselineskip}\selectfont\textbf{数学建模竞赛} \vspace{1.2cm} \par
+\setmainfont{宋体}\fontsize{14pt}{\baselineskip}\selectfont \hspace{1.0cm}{题\ 目}\hspace{1.0cm}
+\setmainfont{隶书}\fontsize{22pt}{\baselineskip}\selectfont \textbf{\underline{数据的多流形结构分析}} \vspace{0.3cm} \par
+\setmainfont{隶书}\fontsize{18pt}{\baselineskip}\selectfont \centerline{摘\hspace{2.5cm}要:} \vspace{0.3cm} \par
+
+\setmainfont{宋体}\fontsize{12pt}{1.5\baselineskip}\selectfont
+\begin{flushleft}
+{
+
+\hspace{24pt}我们已经进入大数据时代,数据的分析和处理方法成为了诸多问题成功解决的关键.对高维数据的结构进行分析,分离出我们感兴趣的信息,挖掘数据的潜在使用价值,对于生产实践具有重要意义.由文献[1-10],本文对问题1-4进行建模与求解,得到结果如下:
+
+\hspace{24pt}
+\setmainfont{黑体}\fontsize{12pt}{\baselineskip}\selectfont{问题1}
+
+\setmainfont{宋体}\fontsize{12pt}{\baselineskip}\selectfont{
+
+        \hspace{24pt} 由 $SSC$ 算法,我们对附件一中的 200 个 100 维数据分为两类,一类 98 个点,从图像来看分布在两端;二类 102 个点,其中第 21 和第 146 个点夹杂在二类中.}
+
+\hspace{24pt}
+\setmainfont{黑体}\fontsize{12pt}{\baselineskip}\selectfont{问题2}
+
+\setmainfont{宋体}\fontsize{12pt}{\baselineskip}\selectfont{
+
+        \hspace{24pt}(a) 我们提出一种基于训练和拟合的算法,将本题数据分为两类,一类 174 点,二类 166 点.从图像来看,在交叉位置有 5 个点没有分好,具体可由程序算出.
+
+        \hspace{24pt}(b) 我们将 $SMMC$ 与上一小问的算法结合起来,把数据分为三类,一类 30 点,二类 30 点,三类（平面） 240 点,从图像来看,有 3 个点没有分好.
+
+        \hspace{24pt}(c) 也利用 $SMMC$ 算法将本题数据分成两类,一类 200 点,二类 200 点,分类效果较好,从图像来看,没有分错的点.
+
+        \hspace{24pt}(d) 不同于直线和平面,螺旋曲线较复杂,经多次尝试聚类,最终被分成两类,一类 532 点,二类 456 点,在交叉处分类效果较差.}
+
+\hspace{24pt}
+\setmainfont{黑体}\fontsize{12pt}{\baselineskip}\selectfont{问题3}
+
+\setmainfont{宋体}\fontsize{12pt}{\baselineskip}\selectfont{
+
+        \hspace{24pt}(a) 将问题 2a 的算法应用到该实际问题,分为两类,横向 1499 点,纵向 1336 点,十字的中心位置为 $(124.212,135.537)$ .从图像看，部分二类的点被分在一类,这是我们算法自身的缺点.
+
+        \hspace{24pt}(b) 本题我们结合运动分割理论,应用 $Ncut$ 算法,将本题运动特征点轨迹分为三类,一类 67 点,二类 138 点,三类 92 点,并将分割完的数据逐帧打出.
+
+        \hspace{24pt}(c) 本题我们结合多流形聚类理论,应用 $SMMC$ 算法,将 20 张人脸图片进行分类,由于图像的数据矩阵维数比较高,而且因为是实际数据,里面带有噪声,导致程序对第 19 个数据出现了误判.}
+
+\hspace{24pt}
+\setmainfont{黑体}\fontsize{12pt}{\baselineskip}\selectfont{问题4}
+
+\setmainfont{宋体}\fontsize{12pt}{\baselineskip}\selectfont{
+
+        \hspace{24pt}(a) 我们根据文献 [6] 所推荐参数区间,对参数进行了调整.最终结果分为三类,侧面 3818 点,底面 3600 点,顶面 900 点.
+
+        \hspace{24pt}(b) 我们参考文献 [10] 所提方法,估计出最优聚类类数为六类,最终结果表明,对光滑的曲线分割效果比较好.}
+
+}
+
+\vspace{1.0cm}
+\hspace{24pt}
+\setmainfont{黑体}\fontsize{12pt}{\baselineskip}\selectfont {关键字：}
+\setmainfont{宋体}\fontsize{12pt}{\baselineskip}\selectfont {聚类、子空间、流形、分割、谱多流形聚类}
+
+\end{flushleft}
+
+\end{document}
